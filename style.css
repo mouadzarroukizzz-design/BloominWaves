@@ -1,25 +1,27 @@
 
-:root {
-  --ocean-blue: #1f6f8b;
-  --sea-green: #4caf8f;
-  --sand-gold: #f0b86e;
-  --sky-blue: #e6f7ff;
-  --deep-navy: #0a3d62;
-  --white: #ffffff;
+
+
+header {
+  background: linear-gradient(
+    rgba(31,111,139,0.85),
+    rgba(31,111,139,0.9)
+  ),
+  url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
-body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-  background-color: #f5f7f6;
-  color: #333;
-}
-
-h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+header {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -39,198 +41,15 @@ h1, h2, h3 {
 }
 
 
-header {
-  background: linear-gradient(rgba(31, 111, 139, 0.85), rgba(16, 82, 107, 0.9)),
-    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-header {
-  
-  position: relative;
-  padding: 80px 20px 100px 20px; 
-
-header h1 {
-  font-size: 3.5em;
-  margin-bottom: 15px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-header p {
-  font-size: 1.3em;
-  max-width: 600px;
-  margin: 0 auto 30px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.btn {
-  display: inline-block;
-  background: #4caf8f;
-  color: white;
-  padding: 15px 35px;
-  margin-top: 20px;
-  text-decoration: none;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1.1em;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(76, 175, 143, 0.3);
-  border: 2px solid transparent;
-  position: relative;
-  z-index: 1;
-}
-
-.btn:hover {
-  background: transparent;
-  color: #4caf8f;
-  border-color: #4caf8f;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(76, 175, 143, 0.4);
-}
-
-
-section {
-  padding: 80px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-h2 {
-  color: #1f6f8b;
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 2.2em;
-  position: relative;
-}
-
-h2::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: #f0b86e;
-  margin: 15px auto 0;
-  border-radius: 2px;
-}
-
-/* Improved Services */
-#services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-.service {
-  background: white;
-  padding: 30px;
-  margin-bottom: 0;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  border-top: 4px solid #4caf8f;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-}
-
-.service h3 {
-  color: #1f6f8b;
-  margin-bottom: 15px;
-  font-size: 1.4em;
-}
-
-
-#values ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#values li {
-  background: #e6f7ff;
-  padding: 25px;
-  border-radius: 10px;
-  font-size: 1.1em;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  transition: transform 0.3s ease;
-}
-
-#values li:hover {
-  transform: translateX(5px);
-}
-
-#values li::before {
-  font-size: 1.5em;
-}
-
-#contact {
-  background: linear-gradient(135deg, #e6f7ff 0%, #f0f9f5 100%);
-  border-radius: 20px;
-  padding: 60px;
-  text-align: center;
-  margin-top: 40px;
-}
-
-#contact h2 {
-  color: #1f6f8b;
-}
-
-#contact p {
-  font-size: 1.2em;
-  margin: 20px 0;
-  line-height: 1.8;
-}
-
-/* Footer */
-footer {
-  background: #1f6f8b;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
+section:first-of-type {
   margin-top: 60px;
 }
 
-@media (max-width: 768px) {
-  header {
-    padding: 60px 20px;
-    min-height: 60vh;
-  }
-  
-  header h1 {
-    font-size: 2.5em;
-  }
-  
-  .logo {
-    width: 140px;
-  }
-  
-  h2 {
-    font-size: 1.8em;
-  }
-  
-  #services {
-    grid-template-columns: 1fr;
-  }
-  
-  #contact {
-    padding: 40px 20px;
-  }
+
+.divider {
+  height: 4px;
+  background: linear-gradient(to right, #1f6f8b, #4caf8f);
+  width: 80px;
+  margin: 40px auto;
+  border-radius: 2px;
 }
-
-
-
