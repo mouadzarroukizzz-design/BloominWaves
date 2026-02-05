@@ -54,14 +54,9 @@ header {
   align-items: center;
   position: relative;
 }
-header::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
-  background: linear-gradient(to bottom, transparent, #f5f7f6);
+header {
+  position: relative;
+  overflow: visible; /
 }
 
 header::after {
@@ -247,4 +242,5 @@ footer {
     padding: 40px 20px;
   }
 }
+
 
