@@ -66,4 +66,10 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+  .logo {
+  width: 160px;
+  max-width: 80%;
+  margin-bottom: 20px;
 }
+}
+
