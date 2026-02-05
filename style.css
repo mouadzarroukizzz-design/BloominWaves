@@ -67,12 +67,13 @@ footer {
   text-align: center;
   padding: 20px;
 .logo {
-  width: 120px;      /* ← change this number */
+  width: 120px;
   height: auto;
+  max-width: 100%; 
   margin-bottom: 20px;
 }
-
 }
+
 
 
 
